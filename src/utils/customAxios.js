@@ -1,4 +1,3 @@
-// Author: Minatisleeping | https://youtube.com/@Minatisleeping
 import axios from "axios"
 
 // File này để dành tới bài học Clean Code rất hay:

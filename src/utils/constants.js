@@ -1,3 +1,2 @@
-// Author: Minatisleeping | https://youtube.com/@Minatisleeping
-export const RENDER_API_ROOT = ''
-export const LOCAL_API_ROOT = 'http://localhost:8017'
+export const RENDER_API_ENDPOINT = 'https://node-server-auth0-sso-lirz.onrender.com'
+export const LOCAL_API_ENDPOINT = 'http://localhost:8017'

@@ -24,7 +24,7 @@ body {
   width: 500px;
   height: 800px;
   border: 1px solid #ccc;
-  background: url("./assets/bg.gif") center center no-repeat;
+  background: url("./assets/bg-3.gif") center center no-repeat;
   background-size: cover;
   border-radius: 20px;
 }

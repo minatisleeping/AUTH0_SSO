@@ -14,5 +14,5 @@
 Click here to see the [demo](https://drive.google.com/file/d/1VUqUlFtU49xqH0NEjy4S2wnRiqiGXUXr/view)
 
 ✔️	 License & Copyright
-&copy; 2024 Mai Minh Nhat minatisleeping Licensed under the [MIT LICENSE](https://github.com/minatisleeping/auth0-sso-react/blob/main/LICENSE).
+&copy; 2024 Mai Minh Nhat minatisleeping Licensed under the [MIT LICENSE](https://github.com/minatisleeping/auth0-sso-react/blob/master/LICENSE).
 

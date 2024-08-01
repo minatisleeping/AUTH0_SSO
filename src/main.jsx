@@ -11,7 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       redirect_uri: window.location.origin,
       audience: RENDER_API_ENDPOINT
     }}
-    cacheLocation='localstorage' // default value is 'memory'
+    cacheLocation='localstorage' // default cacheLocation is 'memory'
+    useRefreshTokens={true} // default useRefreshTokens is false
+    useRefreshTokensFallback={true}
   >
     <App />
   </Auth0Provider>

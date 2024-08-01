@@ -1,11 +1,11 @@
 import ReactJson from 'react-json-view'
 import { useAuth0 } from '@auth0/auth0-react'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
-import { RENDER_API_ENDPOINT, LOCAL_API_ENDPOINT } from '../utils/constants'
+import { LOCAL_API_ENDPOINT, RENDER_API_ENDPOINT } from '../utils/constants'
+import customAxiosInstance from '../utils/customAxios'
 
 const Dashboard = () => {
-  const { user, isAuthenticated, isLoading, getAccessTokenSilently } = useAuth0()
+  const { user, isAuthenticated, isLoading } = useAuth0()
   // console.log('🚀 ~ user:', user)
   // console.log('🚀 ~ isAuthenticated:', isAuthenticated)
   // console.log('🚀 ~ isLoading:', isLoading)
@@ -13,24 +13,15 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchPrivateUser = async () => {
-      const accessToken = await getAccessTokenSilently()
-      // console.log('🚀 ~ accessToken:', accessToken)
-      
-      // const res = await axios.get(`${LOCAL_API_ENDPOINT}/api-v1/users/private/get-all`, {
-      //   headers: { Authorization: `Bearer ${accessToken}` }
-      // })
-      const res = await axios.get(`${RENDER_API_ENDPOINT}/api-v1/users/private/get-all`, {
-        headers: { Authorization: `Bearer ${accessToken}` }
-      })
-
+      // const res = await customAxiosInstance.get(`${LOCAL_API_ENDPOINT}/api-v1/users/private/get-all`)
+      const res = await customAxiosInstance.get(`${RENDER_API_ENDPOINT}/api-v1/users/private/get-all`)
       setPrivateUsers(res.data)
     }
-    fetchPrivateUser()
-  }, [getAccessTokenSilently])
-
-  console.log('🚀 ~ privateUsers:', privateUsers)
+    if (isAuthenticated) fetchPrivateUser()
+  }, [isAuthenticated])
 
   if (!isAuthenticated) return null
+  // console.log('🚀 ~ privateUsers:', privateUsers)
 
   return (
     <div className='dashboard'>

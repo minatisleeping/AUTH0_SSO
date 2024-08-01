@@ -15,7 +15,7 @@ export const injectFn = _getAccessTokenSilently => {
 // Request interceptor
 customAxiosInstance.interceptors.request.use(async (config) => {
   const accessToken = await getAccessTokenSilently()
-  // console.log('🚀 ~ accessToken:', accessToken)
+  console.log('🚀 ~ accessToken:', accessToken)
   config.headers.Authorization = `Bearer ${accessToken}`
 
   return config

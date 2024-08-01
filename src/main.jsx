@@ -11,9 +11,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       redirect_uri: window.location.origin,
       audience: RENDER_API_ENDPOINT
     }}
-    cacheLocation='localstorage' // default cacheLocation is 'memory'
+    // Refresh tokens
     useRefreshTokens={true} // default useRefreshTokens is false
     useRefreshTokensFallback={true}
+
+    // SSO
+    cookieDomain='.minat.local'
+    cacheLocation='memory' /*default cacheLocation is 'memory', để sử dụng cơ chế SSO(
+    login, logout) thì cacheLocation cần chuyển về memory */
   >
     <App />
   </Auth0Provider>

@@ -1,18 +1,27 @@
-### "Xác thực với React + Auth0 SSO - Single Sign On"
+# 🌐 Authentication System with React + Auth0 SSO - Single Sign-On
 
- Xây dựng hệ thống xác thực một lần: SSO (Single Sign-on) tương tự Google.
+Developed a robust Single Sign-On (SSO) authentication system, inspired by Google’s authentication flow. This project leverages **React** and **Auth0** to provide seamless, secure, and scalable access management.
 
-### Requirements (Semantic Versioning)
+## ✨ Key Features
 
-```
-* nodejs = v20.12.2
+- 🔐 Simplifies user authentication by allowing one set of credentials for multiple applications.
+- 🛡️ Integrates with **Auth0** to ensure secure and industry-standard authentication protocols.
+- 📱 Fully responsive and compatible with modern authentication apps and browsers.
+- ⚡ Optimized for scalability and performance in enterprise-grade applications.
+
+## ⚙️ Requirements
+
+```bash
+* Node.js = v20.12.2
 * npm = v10.5.0
-* yarn = v1.22.19
+* Yarn = v1.22.19
 ```
 
-### 📍 Demo
-Click here to see the [demo](https://drive.google.com/file/d/1VUqUlFtU49xqH0NEjy4S2wnRiqiGXUXr/view)
+## 📍 Demo
 
-✔️	 License & Copyright
-&copy; 2024 Mai Minh Nhat minatisleeping Licensed under the [MIT LICENSE](https://github.com/minatisleeping/auth0-sso-react/blob/master/LICENSE).
+Experience the live demonstration here: [🎥 Watch the Demo](https://drive.google.com/file/d/1VUqUlFtU49xqH0NEjy4S2wnRiqiGXUXr/view)
 
+## ✔️ License & Copyright
+
+&copy; 2024 Mai Minh Nhat (minatisleeping)  
+Licensed under the [MIT License](https://github.com/minatisleeping/auth0-sso-react/blob/master/LICENSE).
